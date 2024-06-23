@@ -1,5 +1,5 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import {bigBike1, bigBike2, bigBike3, thumbnailBike1, thumbnailBike2, thumbnailBike3, customer1, customer2, bike4, bike5, bike6, bike7 } from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -8,18 +8,18 @@ export const navLinks = [
     { href: "#contact-us", label: "Contact Us" },
 ];
 
-export const shoes = [
+export const bikes = [
     {
-        thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
+        thumbnail: thumbnailBike1,
+        bigBike: bigBike1,
     },
     {
-        thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
+        thumbnail: thumbnailBike2,
+        bigBike: bigBike2,
     },
     {
-        thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
+        thumbnail: thumbnailBike3,
+        bigBike: bigBike3,
     },
 ];
 
@@ -31,24 +31,24 @@ export const statistics = [
 
 export const products = [
     {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        imgURL: bike4,
+        name: "1000W Hybrid Mountain Bike",
+        price: "$1200.20",
     },
     {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        imgURL: bike5,
+        name: "Himo Scooter E-Bike",
+        price: "$980.50",
     },
     {
-        imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
+        imgURL: bike6,
+        name: "1500W E-Mountain Bike",
+        price: "$2300.00",
     },
     {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        imgURL: bike7,
+        name: "Titaone Scooter E-Bike",
+        price: "$730.00",
     },
 ];
 
@@ -90,12 +90,12 @@ export const footerLinks = [
     {
         title: "Products",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "1000W Hybrid Mountain Bike", link: "/" },
+            { name: "1500W E-Mountain Bike", link: "/" },
+            { name: "Jansno E-Bike 20", link: "/" },
+            { name: "Titaone 18inch Fat Tire Bike", link: "/" },
+            { name: "Waffle Racer 750W", link: "/" },
+            { name: "Himo Folding E-Bike", link: "/" },
         ],
     },
     {
@@ -111,7 +111,7 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+            { name: "customer@wetson.com", link: "wetson.com" },
             { name: "+92554862354", link: "tel:+92554862354" },
         ],
     },

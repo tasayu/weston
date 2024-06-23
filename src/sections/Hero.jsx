@@ -3,12 +3,12 @@ import Button from "../components/Button";
 import { useState } from "react";
 
 import { arrowRight } from "../assets/icons";
-import { shoes, statistics } from "../constants";
-import { bigShoe1 } from "../assets/images";
-import ShoeCard from "../components/ShoeCard";
+import { bikes, statistics } from "../constants";
+import { bigBike1} from "../assets/images";
+import BikeCard from "../components/BikeCard";
 
 const Hero = () => {
-  const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
+  const [bigBikeImg, setBigBikeImg] = useState(bigBike1)
   return (
     <section 
       id="home"
@@ -19,9 +19,9 @@ const Hero = () => {
         <h1 className="mt-1 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[1] font-bold">
           <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
           <br />
-          <span className="text-coral-red inline-block mt-3">Weston</span> <span className="relative z-10">Shoes</span>
+          <span className="text-coral-red inline-block mt-3">Weston</span> <span className="relative z-10 ">E-bikes</span>
         </h1>
-        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover stylish Nike arrivals, quality comfort and innovation for your active life.</p>
+        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">Discover stylish E-Bikes arrivals, quality comfort and innovation for your active life.</p>
         <Button label="Shop now" iconURL={arrowRight}  />
         <div className="flex justify-starts items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
@@ -37,20 +37,20 @@ const Hero = () => {
 
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img 
-          src={bigShoeImg} 
-          alt="shoe collection"
+          src={bigBikeImg} 
+          alt="bike collection"
           width={610}
           height={500}
           className="object-contain relative z-10"
          />
 
          <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
-            {shoes.map((shoe, index) => (
-              <div key={shoe}>
-                <ShoeCard 
-                  imgURL={shoe}
-                  changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
-                  bigShoeImg={bigShoeImg}
+            {bikes.map((bike, index) => (
+              <div key={bike}>
+                <BikeCard 
+                  imgURL={bike}
+                  changeBigBikeImage={(bike) => setBigBikeImg(bike)}
+                  bigBikeImg={bigBikeImg}
                 />
               </div>
             ))}
